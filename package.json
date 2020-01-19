@@ -1,15 +1,18 @@
 {
-  "name": "chatapp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod": "gulp --production",
+    "dev": "gulp watch"
   },
-  "author": "Kunal Yadav",
-  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^5.0.0",
+    "bootstrap-sass": "^3.0.0"
+  },
   "dependencies": {
-    "socket.io": "^2.0.3",
-    "express": "*"
+    "express": "^4.17.1",
+    "redis": "^2.8.0",
+    "redis-server": "^1.2.2",
+    "socket.io": "^2.3.0"
   }
 }
